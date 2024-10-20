@@ -1,0 +1,16 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app_tasks_area {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task_column {
+  width: 25%;
+  margin: 20px;
+}
