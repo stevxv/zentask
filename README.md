@@ -1,8 +1,10 @@
-# React + Vite
+# ZenTask - Productivity with Tranquility
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ZenTask is a task management app made with React JS.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features:
+- Add tasks
+- Add tags to tasks
+- Add priority to tasks (Zen Mode, Flow Mode and Calm Mode)
+- Drag and drop tasks to change their priority
+- Mark tasks as done to delete them
