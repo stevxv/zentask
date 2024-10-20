@@ -10,3 +10,8 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+.tag:hover {
+    background-color: #cbcfd3;
+    transition: all 0.2s ease-in-out;
+}

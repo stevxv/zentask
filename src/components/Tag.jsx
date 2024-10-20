@@ -9,7 +9,7 @@ const Tag = ({tagName, selectTag, selected}) => {
         Personal: {backgroundColor: '#69A297'},
         Hogar: {backgroundColor: '#9D8D96'},
         Salud: {backgroundColor: '#679BAB'},
-        default: {backgroundColor: '#DEE2E6'}
+        // default: {backgroundColor: '#DEE2E6'}
     }
   return (
     <button type='button' className='tag' style={selected ? tagStyle[tagName] : tagStyle.default} onClick={() => selectTag(tagName)}>{tagName}</button>
