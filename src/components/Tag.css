@@ -1,17 +1,17 @@
 .tag {
     font-size: 16px;
     font-weight: 600;
-    background-color: #DEE2E6;
-    /* border: 1px solid #dfe3e6; */
+    background-color: var(--tertiary-color);
     border: none;
     border-radius: 5px;
     padding: 3px 13px;
     height: 40px;
     margin-right: 10px;
     cursor: pointer;
+    color: var(--primary-color);
 }
 
 .tag:hover {
-    background-color: #cbcfd3;
+    background-color: var(--tertiary-hover-color);
     transition: all 0.2s ease-in-out;
 }

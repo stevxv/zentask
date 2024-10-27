@@ -1,0 +1,28 @@
+.dark_mode_btn {
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark_mode_btn svg {
+  fill: var(--primary-color);
+}
+
+.dark_mode_btn svg:last-child {
+  display: none;
+}
+
+.dark_mode .dark_mode_btn svg:first-child {
+  display: none;
+}
+
+.dark_mode .dark_mode_btn svg:last-child {
+  display: block;
+}

@@ -1,13 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --background-color: #f8f9fa;
+  --primary-color: #212529;
+  --border-color: #e1e1e1;
+  --placeholder-color: #afafaf;
+  --secondary-color: #fff;
+  --tertiary-color: #dee2e6;
+  --tertiary-hover-color: #cbcfd3;
+  --task-delete-color: #ebebeb;
+
+  --tag-work-color: #a3c9a8;
+  --tag-studies-color: #84b59f;
+  --tag-personal-color: #69a297;
+  --tag-home-color: #9d8d96;
+  --tag-health-color: #679bab;
+}
+
+.dark_mode {
+  --background-color: #202124;
+  --primary-color: #fff;
+  --border-color: #343a40;
+  --placeholder-color: #6c757d;
+  --secondary-color: #343a40;
+  --tertiary-color: #495057;
+  --tertiary-hover-color: #6c757d;
+  --task-delete-color: #495057;
+
+  --tag-work-color: #79957d;
+  --tag-studies-color: #668b7a;
+  --tag-personal-color: #55837a;
+  --tag-home-color: #7c6f76;
+  --tag-health-color: #4f7884;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
-}
-
-body {
-  background-color: #F8F9FA;
-  color: #212529;
 }

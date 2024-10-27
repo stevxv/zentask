@@ -2,10 +2,10 @@
     position: relative;
     width: 100%;
     min-height: 100px;
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 15px;
-    background-color: white;
+    background-color: var(--secondary-color);
     cursor: grab;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .task_delete:hover {
-    background-color: #ebebeb;
+    background-color: var(--task-delete-color);
 }
 
 .delete_icon {

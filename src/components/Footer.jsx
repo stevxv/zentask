@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-import './Footer.css'
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer>
-      <div className='footer_logo'>
+      <div className="footer_logo">
         <img src="/icon-white.png" alt="zentask-logo" />
         <p>ZenTask</p>
       </div>
@@ -13,7 +13,7 @@ const Footer = () => {
         <img src="/github-icon.svg" alt="github-icon" />
       </a>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

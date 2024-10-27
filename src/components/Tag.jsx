@@ -4,11 +4,11 @@ import './Tag.css'
 
 const Tag = ({tagName, selectTag, selected}) => {
     const tagStyle = {
-        Trabajo: {backgroundColor: '#A3C9A8'},
-        Estudios: {backgroundColor: '#84B59F'},
-        Personal: {backgroundColor: '#69A297'},
-        Hogar: {backgroundColor: '#9D8D96'},
-        Salud: {backgroundColor: '#679BAB'},
+        Trabajo: {backgroundColor: 'var(--tag-work-color)'},
+        Estudios: {backgroundColor: 'var(--tag-studies-color)'},
+        Personal: {backgroundColor: 'var(--tag-personal-color)'},
+        Hogar: {backgroundColor: 'var(--tag-home-color)'},
+        Salud: {backgroundColor: 'var(--tag-health-color)'},
         // default: {backgroundColor: '#DEE2E6'}
     }
   return (

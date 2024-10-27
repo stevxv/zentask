@@ -1,12 +1,22 @@
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 200px;
-    border-bottom: 1px solid #e1e1e1;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
 }
 
 nav h1 {
-    font-weight: 900;
+  font-weight: 900;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
 }

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
-import "./App.css"
-import TaskForm from './components/TaskForm'
-import TaskColumn from './components/TaskColumn'
-import NavegationBar from './components/NavegationBar';
-import Footer from './components/Footer';
+import "./App.css";
+import TaskForm from "./components/TaskForm";
+import TaskColumn from "./components/TaskColumn";
+import NavegationBar from "./components/NavegationBar";
+import Footer from "./components/Footer";
 
 const oldTasks = localStorage.getItem("tasks");
 
@@ -14,12 +14,12 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks])
+  }, [tasks]);
 
   const handleDelete = (taskIndex) => {
     const newTasks = tasks.filter((task, index) => index !== taskIndex);
     setTasks(newTasks);
-  }
+  };
 
   const onDrop = (status, index) => {
     if (activeCard == null || activeCard === undefined) return;
@@ -29,18 +29,18 @@ const App = () => {
 
     updaqueTasks.splice(index, 0, {
       ...taskToMove,
-      status: status
+      status: status,
     });
 
     setTasks(updaqueTasks);
-  }
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <NavegationBar />
       <main>
         <TaskForm setTasks={setTasks} />
-        <div className='app_tasks_area'>
+        <div className="app_tasks_area">
           <TaskColumn
             taskColumnName="Flow Mode"
             taskColumnDescription="Puede esperar un poco"
@@ -53,7 +53,8 @@ const App = () => {
           <TaskColumn
             taskColumnName="Zen Mode"
             taskColumnDescription="Debe hacerse hoy"
-            tasks={tasks} status="zen"
+            tasks={tasks}
+            status="zen"
             handleDelete={handleDelete}
             setActiveCard={setActiveCard}
             onDrop={onDrop}
@@ -71,7 +72,7 @@ const App = () => {
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
