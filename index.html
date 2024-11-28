@@ -6,7 +6,7 @@
       id="favicon"
       rel="icon"
       type="image/x-icon"
-      href="/src/assets/icon-white.ico"
+      href="/public/icon-white.ico"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZenTask</title>
@@ -17,16 +17,11 @@
       const setFavicon = (theme) => {
         const favicon = document.getElementById("favicon");
         favicon.href = theme.matches
-          ? "/src/assets/icon-white.ico "
-          : "/src/assets/icon-black.ico";
+          ? "/public/icon-white.ico"
+          : "/public/icon-black.ico";
       };
-
       const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-      // Set favicon on page load
       setFavicon(darkTheme);
-
-      // Update favicon when theme changes
       darkTheme.addEventListener("change", setFavicon);
     </script>
     <script type="module" src="/src/main.jsx"></script>

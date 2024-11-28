@@ -2,6 +2,8 @@
 
 ZenTask es una aplicación web diseñada para la gestión de tareas, enfocada en la productividad con tranquilidad. Proporciona un entorno limpio y minimalista para priorizar y organizar tareas según su importancia y urgencia. La aplicación presenta tres modos principales de organización para adaptarse a diferentes estados mentales y niveles de enfoque:
 
+![ZenTask Screenshot](./public/zentask-screenshot.png)
+
 - **Flow Mode**: Para tareas que pueden esperar un poco.
 - **Zen Mode**: Para tareas que deben hacerse hoy.
 - **Calm Mode**: Para tareas sin prisa, que se pueden realizar cuando haya tiempo.
