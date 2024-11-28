@@ -2,10 +2,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #212529;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 10px 150px;
   margin-top: 40px;
+  border-top: 1px solid var(--border-color);
 }
 
 footer p {
@@ -30,4 +31,22 @@ a img {
 .footer_logo {
   display: flex;
   align-items: center;
+}
+
+.footer_logo img:last-child {
+  display: none;
+}
+
+.dark_mode .footer_logo img:first-child {
+  display: none;
+}
+
+.dark_mode .footer_logo img:last-child {
+  display: block;
+}
+
+svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--primary-color);
 }

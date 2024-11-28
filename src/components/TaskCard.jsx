@@ -1,26 +1,36 @@
-import React from 'react'
+import React from "react";
 
-import './TaskCard.css'
-import Tag from './Tag'
-import deleteIcon from '../assets/done-icon.png'
+import "./TaskCard.css";
+import Tag from "./Tag";
+import deleteIcon from "../assets/done-icon.png";
 
-const TaskCard = ({title, tags, handleDelete, index, setActiveCard}) => {
+const TaskCard = ({ title, tags, handleDelete, index, setActiveCard }) => {
   return (
-    <article className='task_card' draggable onDragStart={() => setActiveCard(index)} onDragEnd={() => setActiveCard(null)}>
-        <p className='task_text'>{title}</p>
+    <article
+      className="task_card"
+      draggable
+      onDragStart={() => setActiveCard(index)}
+      onDragEnd={() => setActiveCard(null)}
+    >
+      <p className="task_text">{title}</p>
 
-        <div className='task_card_bottom_line'>
-            <div className='task_card_tag'>
-                {
-                    tags.map((tag, index) => <Tag key={index} tagName={tag} selected />)
-                }
-            </div>
-            <div className='task_delete' onClick={() =>handleDelete(index)}>
-                <img src={deleteIcon} className='delete_icon' alt="delete-button" />
-            </div>
+      <div className="task_card_bottom_line">
+        <div className="task_card_tag">
+          {tags.map((tag, index) => (
+            <Tag key={index} tagName={tag} selected />
+          ))}
         </div>
+        <div className="task_delete" onClick={() => handleDelete(index)}>
+          <img
+            src={deleteIcon}
+            className="delete_icon"
+            alt="delete-button"
+            title="Completado"
+          />
+        </div>
+      </div>
     </article>
-  )
-}
+  );
+};
 
-export default TaskCard
+export default TaskCard;

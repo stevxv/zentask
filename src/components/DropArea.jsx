@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import './DropArea.css'
+import "./DropArea.css";
 
-const DropArea = ({onDrop}) => {
-    const [showDrop, setShowDrop] = useState(false);
+const DropArea = ({ onDrop }) => {
+  const [showDrop, setShowDrop] = useState(false);
   return (
-    <section 
-        onDragEnter={() => setShowDrop(true)} 
-        onDragLeave={() => setShowDrop(false)} 
-        onDrop={() => {
-            onDrop(); 
-            setShowDrop(false);
-        }}
-        onDragOver={(e) => e.preventDefault()}
-        className={showDrop ? 'drop_area' : 'hide_drop'}
-        >
-            Mover aquí
+    <section
+      onDragEnter={() => setShowDrop(true)}
+      onDragLeave={() => setShowDrop(false)}
+      onDrop={() => {
+        onDrop();
+        setShowDrop(false);
+      }}
+      onDragOver={(e) => e.preventDefault()}
+      className={showDrop ? "drop_area" : "hide_drop"}
+    >
+      Mover aquí
     </section>
-  )
-}
+  );
+};
 
-export default DropArea
+export default DropArea;

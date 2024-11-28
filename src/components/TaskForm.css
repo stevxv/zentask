@@ -1,57 +1,64 @@
 .app_header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .app_header > form {
-    width: 50%;
+  width: 50%;
+  font-family: "Inter", sans-serif;
 }
 
 .task_input {
-    font-size: 20px;
-    font-weight: 400;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    padding: 8px 12px; 
-    margin-bottom: 15px;
-    width: 100%;
-    outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: none;
+  font-family: "Inter", sans-serif;
 }
 
 .task_input::placeholder {
-    color: #afafaf;
+  color: #afafaf;
 }
 
 .task_form_bottom_line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .task_status {
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    width: 120px;
-    height: 40px;
-    padding: 0 5px;
-    outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  padding: 0 5px;
+  outline: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 .task_submit {
-    font-size: 16px;
-    font-weight: 500;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 5px;
-    height: 40px;
-    padding: 3px 13px;
-    margin-left: 10px;
-    border: none;
-    cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  height: 40px;
+  padding: 3px 13px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
 }

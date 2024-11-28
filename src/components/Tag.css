@@ -1,17 +1,18 @@
 .tag {
-    font-size: 16px;
-    font-weight: 600;
-    background-color: var(--tertiary-color);
-    border: none;
-    border-radius: 5px;
-    padding: 3px 13px;
-    height: 40px;
-    margin-right: 10px;
-    cursor: pointer;
-    color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 3px 13px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif;
 }
 
 .tag:hover {
-    background-color: var(--tertiary-hover-color);
-    transition: all 0.2s ease-in-out;
+  background-color: var(--tertiary-hover-color);
+  transition: all 0.2s ease-in-out;
 }

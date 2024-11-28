@@ -1,5 +1,8 @@
+.task_column {
+  font-family: "Playfair Display", serif;
+}
+
 .task_column_heading {
-    display: flex;
-    align-items: center;
-    /* margin-bottom: 15px; */
+  display: flex;
+  align-items: center;
 }

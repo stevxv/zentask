@@ -2,12 +2,33 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icon-white.png" />
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/icon-white.ico"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZenTask</title>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const setFavicon = (theme) => {
+        const favicon = document.getElementById("favicon");
+        favicon.href = theme.matches
+          ? "/src/assets/icon-white.ico "
+          : "/src/assets/icon-black.ico";
+      };
+
+      const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // Set favicon on page load
+      setFavicon(darkTheme);
+
+      // Update favicon when theme changes
+      darkTheme.addEventListener("change", setFavicon);
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
