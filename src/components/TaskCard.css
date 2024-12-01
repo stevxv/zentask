@@ -27,6 +27,12 @@
   justify-content: space-between;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .task_delete {
   width: 35px;
   height: 35px;
@@ -46,6 +52,7 @@
   width: 20px;
   opacity: 20%;
   transition: all 0.3s ease-in-out;
+  fill: var(--primary-color);
 }
 
 .task_delete:hover .delete_icon {
